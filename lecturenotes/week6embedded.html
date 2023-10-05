@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width", initial-scale="1.0"> 
+        <title>Week 6 Embedded CSS</title>
+        <style>
+            h1 {color:darkolivegreen;}
+            /* body selects everything */ 
+            body {
+                font-family:'Times New Roman', Times, serif;
+                background-color: cornsilk;
+        
+        }
+            /* in em 2 is twice default size */ 
+            p, h1, a { /* grouped selector */ 
+                font-size: 2em;
+                font-weight:bolder;
+                background-color:cadetblue;
+            } 
+            p a {text-decoration: none;} 
+            #secondpara {color:darkkhaki;}
+            .yellow {color: yellow;} 
+        </style>
+    </head>
+    <body> 
+        <h1 class="yellow">CSS</h1>
+        <a href="http://www.amazon.com">Amazon</a>
+        <p><a href="http://www.ebay.com">Ebay</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusantium minus fuga accusamus! Iusto deleniti, laborum officia provident quidem eligendi ad dolorem magnam, ab, non enim illum iure doloribus nostrum.</p>
+        <!-- each value for id must be unique -->
+        <p id="secondpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis accusantium minus fuga accusamus! Iusto deleniti, laborum officia provident quidem eligendi ad dolorem magnam, ab, non enim illum iure doloribus nostrum.</p>
+
+    </body>
+</html>
