@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html land="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Centering</title>
+        <style>
+            .first {text-align: center;}
+            .second {background-color: #ff7b00;
+            width: 50%;
+            margin: 0 auto; /* 0 is top and bottom, auto is equal space left and right */ 
+            }
+            .third {display: flex;
+            justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Centering</h1>
+        <h2>text-align</h2>
+        <p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui necessitatibus maiores tempore libero, hic architecto pariatur. Quis minus voluptates sit ipsam est suscipit nihil. Officiis vel itaque commodi earum perspiciatis.</p>
+
+        <h2>block stuff centering</h2>
+        <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nostrum vero aliquam velit molestiae dolorem hic temporibus sapiente inventore explicabo sequi corrupti ipsa quibusdam, porro, eaque consequuntur voluptas iste nesciunt.</p>
+
+        <h2>flex box hack</h2>
+        <p>this hack only works with content smaller than width of the page</p>
+        <p class="third">Lorem, ipsum dolor</p>
+    </body>
+</html>
