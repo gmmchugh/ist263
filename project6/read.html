@@ -44,15 +44,28 @@
     
     @media only screen and (min-width: 601px) {
     }
+    .skip {
+        background-color: black;
+        padding: 5px;
+        border: 1px solid #0000;
+        text-decoration: none;
+        position: absolute;
+        top: 10px;
+        left: -999px;
+    }
+    .skip:focus {
+        left: 10px;
+    }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="nav">
     <nav>
-        <a href="../project5/homepage.html">Home</a>
-        <a href="../project5/Read.html">Read</a>
-        <a href="../project5/shop.html">Shop</a>
+        <a href="#main" class="skip" tabindex="1">Skip to Content</a>
+        <a href="../project5/homepage.html" tabindex="2">Home</a>
+        <a href="../project5/Read.html" tabindex="3">Read</a>
+        <a href="../project5/shop.html" tabindex="4">Brands</a>
     </nav>
     </div>
     <h1 class="products">Products We Love</h1>
