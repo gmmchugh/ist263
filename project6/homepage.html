@@ -5,34 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
         <style>
-            .brandname {text-align: left;
-                font-family:Verdana, Geneva, Tahoma, sans-serif 
-            } 
-            .center {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 75%; 
-            }
-            .row1 {display: flex;}
-
-            .row1 div {/* selects divs inside element with tow1 class*/
-            flex: 1;
-            padding: 2px; 
-        }
             .container {
             background-color: #c6dee6;
             padding: 20px; /*padding is space inside the box*/ 
             border: 2px solid #c6dee6;  
             margin: 5px;
             color:#073c57;
-        }
-        .container2 {
-            flex-direction: column; 
-            justify-content: center;
-        }
-        
+            }
+            .brandname {text-align: left;
+                font-family:Verdana, Geneva, Tahoma, sans-serif 
+            } 
+            
+            .reads {
+                margin: 0 auto;
+                display: flex;
+            }
+            
         </style>
+
     </head>
     <body>
     <div class="container"> 
@@ -44,39 +34,35 @@
         </nav>
     </div>
 
-    <div class="container2">
     <div class="mainpicture">
         <img src="../project-images/pexels-sora-shimazaki-5938242.jpg" width="400" alt="washing face" class="center"> 
     </div>
 
+    <div class="reads">
         <h2>New Reads</h2>
-
-        <div class="row1">
-            <div class="article1">
-                <img src="../project-images/pexels-cottonbro-studio-4046316.jpg" height="300" alt="product jar">
+            <div>
+                <img src="../project-images/pexels-cottonbro-studio-4046316.jpg" height="300" alt="product jar"><br>
             
                 <p><strong>Products We Love</strong><br>
                     Read about the products we<br>
                     love and why we love them!</p>
             </div>
-            
-            <div class="article2">
-                <img src="../project-images/pexels-anna-nekrashevich-8533223.jpg" height="300" alt="plain bottles">
+
+            <div>
+                <img src="../project-images/pexels-anna-nekrashevich-8533223.jpg" height="300" alt="plain bottles"><br>
 
                 <p><strong>Brands We Love</strong><br>
                     Learn more about the brands<br>
                     we trust and why!</p>
             </div>
 
-            <div class="article3">
-                <img src="../project-images/pexels-ron-lach-8131588.jpg" height="300" alt="plain product">
+            <div>
+                <img src="../project-images/pexels-ron-lach-8131588.jpg" height="300" alt="plain product"><br>
 
                 <p><strong>New to Beauty</strong><br> 
                     Get introduced to new brands<br>
                     and products in the wellness world!</p>
-
             </div>
-        </div>
-    </div> 
+    </div>
     </body>
 </html>
