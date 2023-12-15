@@ -5,11 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
-        <style>
-            .brandname {text-align: left;} 
+    <style>
+            .brandname {
+                text-align: center;
+            }
+
+            .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FFFF; 
+            padding: 10px;
+            border: 5px;
+            word-spacing: 2cm;
+            }
+
+            .container {
+            background-color: #c6dee6;
+            padding: 20px; /*padding is space inside the box*/ 
+            border: 2px solid #c6dee6;  
+            margin: 5px;
+            color:#073c57;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            }
+
+            h2, p {
+                color:#073c57;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+            }
+
+            body {
+            background-color: aliceblue;
+            color:#073c57;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
             .center {
                 display: block;
                 margin-left: auto;
@@ -20,7 +53,8 @@
                 width: 1279px;
                 text-align: center;
                 margin-left: auto;
-                margin-right: auto;} 
+                margin-right: auto;
+            } 
 
             .row1 div {
                 flex: 1;
@@ -40,22 +74,53 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-        </style>
+            
+            @media only screen and (max-width: 600px) {
+            nav a{max-width: 100%;
+            display: block;
+            padding: 10px;}
+            span{display:none;}
+            }
+            
+            @media only screen and (min-width: 601px) {
+            }
+            
+            .skip {
+                background-color: black;
+                padding: 5px;
+                border: 1px solid #0000;
+                text-decoration: none;
+                position: absolute;
+                top: 10px;
+                left: -999px;
+                }
+    
+            .skip:focus {
+            left: 10px;
+            }
+    </style>
     </head>
+    
     <body>
-        <h1 class="brandname">Best For You Beauty</h1>
-        <nav>
-            <a href="../project5/homepage.html">Home &#124;</a>
-            <a href="../project5/Read.html">Read &#124;</a>
-            <a href="../project5/shop.html">Shop &#124;</a>
-        </nav>
-        <img src="../project-images/pexels-sora-shimazaki-5938242.jpg" alt="washing face" class="center"> 
+        <div class="container">
+            <h1 class="brandname">Best For You Beauty</h1>
+            <div class="nav">
+                <nav>
+                    <a href="#main" class="skip" tabindex="1">Skip to Content</a>
+                    <a href="../project7/homepage.html" tabindex="2">Home</a>
+                    <a href="../project7/read.html" tabindex="3">Product</a>
+                    <a href="../project7/shop.html" tabindex="4">Brands</a>
+                </nav>
+            </div>
+        </div>
+        
+        <img src="../project-images/pexels-sora-shimazaki-5938242.jpg" alt="women putting on face moisturizer" class="center"> 
 
         <h2>New Reads</h2>
 
         <div class="row1">
             <div class="article1">
-                <img src="../project-images/pexels-cottonbro-studio-4046316.jpg" height="300" alt="product jar">
+                <img src="../project-images/pexels-cottonbro-studio-4046316.jpg" height="300" alt="face moisturizer jar in person's hand">
             
                 <p><strong>Products We Love</strong><br>
                     Read about the products we<br>
@@ -63,7 +128,7 @@
             </div>
             
             <div class="article2">
-                <img src="../project-images/pexels-anna-nekrashevich-8533223.jpg" height="300" alt="plain bottles">
+                <img src="../project-images/pexels-anna-nekrashevich-8533223.jpg" height="300" alt="three plain bottles in a row">
 
                 <p><strong>Brands We Love</strong><br>
                     Learn more about the brands<br>
@@ -71,7 +136,7 @@
             </div>
 
             <div class="article3">
-                <img src="../project-images/pexels-ron-lach-8131588.jpg" height="300" alt="plain product">
+                <img src="../project-images/pexels-ron-lach-8131588.jpg" height="300" alt="women holding unlabeled product">
 
                 <p><strong>New to Beauty</strong><br> 
                     Get introduced to new brands<br>
@@ -79,5 +144,8 @@
 
             </div>
         </div>
+        <footer>
+            <p>&copy; 2023 Grace McHugh</p>
+        </footer>
     </body>
 </html>

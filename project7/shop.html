@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brands</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        .brands {text-align: center;}
+        .brandssub {text-align: center;} 
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FFFF; 
+            padding: 10px;
+            border: 5px;
+            word-spacing: 2cm;
+        }
+        .container {
+            background-color: #c6dee6;
+            padding: 20px; /*padding is space inside the box*/ 
+            border: 2px solid #c6dee6;  
+            margin: 5px;
+            color:#073c57;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        }
+        .allbrands {color:#073c57; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            padding: 30px;
+        }
+        
+        .p1, .p2, .p3 {
+            flex-wrap: wrap;
+        }
+
+        body {
+            background-color: aliceblue;
+            color:#073c57;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        } 
+        @media only screen and (max-width: 600px) {
+        nav a{max-width: 100%;
+        display: block;
+        padding: 10px;}
+        span{display:none;}
+        }
+    
+        @media only screen and (min-width: 601px) {
+        }
+
+        .skip {
+        background-color: black;
+        padding: 5px;
+        border: 1px solid #0000;
+        text-decoration: none;
+        position: absolute;
+        top: 10px;
+        left: -999px;
+        }
+
+        .skip:focus {
+        left: 10px;
+        }
+
+        @keyframes logo {
+            from {color: #073c57;}
+            to {color: rgb(159, 9, 127);} 
+            0% {font-size: small;} 
+            50% {font-size: medium;}
+            100% {font-size: large;}
+        }
+        .logo {
+            color:#073c57;
+            animation-name: logo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .help1, .help2, .help3 {
+            display: flex;
+            height: 150px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .p1, .p2, .p3 {
+            margin-left: 1cm;
+        }    
+
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <p class="logo"><strong>Best For You Beauty</strong></p>
+            <div class="nav">
+                <nav>
+                    <a href="#main" class="skip" tabindex="1">Skip to Content</a>
+                    <a href="../project7/homepage.html" tabindex="2">Home</a>
+                    <a href="../project7/read.html" tabindex="3">Products</a>
+                    <a href="../project7/shop.html" tabindex="4">Brands</a>
+                </nav>
+            </div>
+            <h1 class="brands">Brands We Love</h1>
+            <p class="brandssub"><strong>Learn more about the brands we trust and why!</strong></p>
+        </div>
+
+        <div class="allbrands">
+
+            <div>
+                <p><strong>Skin Ceuticals</strong></p>
+                <div class="help1">
+                    <img src="../project-images/2023__Madover_I-1035571SC.jpg" height="150px" alt="Skin Ceuticals label">
+                    <p class="p1">Skin Ceuticals deserves all the hype it gets! All products are backed by science and its mission is to improve skin health.
+                    I have used many Skin Ceuticals products and they never disappoint. They are fast acting, and although many are pricy, if you
+                    are looking for products that actually work, this is your brand.</p>
+                </div>
+            </div>
+
+            <div>
+                <p><strong>Caudalie</strong></p>
+                <div class="help2">
+                    <img src="../project-images/2023__Madover_I-1035546caud.jpg" height="150px" alt="Caudalie label">
+                    <p class="p2">This French skincare brand combines natural ingredients with a scientific background creating rich products that do more than
+                    benefit your skin. I love this brand because it prioritizes natural, active ingredients that are good for your skin and don't harm
+                    the environment.</p>
+                </div>
+            </div>
+
+            <div>
+                <p><strong>La Roche-Posay</strong></p>
+                <div class="help3">
+                    <img src="../project-images/2023__Madover_I-1035535LRP.jpg" height="150px" alt="La Roche-Posay label">
+                    <p class="p3">La Roche-Posay is a Dermatologist French Skincare brand which offers a wide variety of skincare needs. It is my favorite drugstore brand
+                    because I haven't found a product I didn't like. Their products are very consistent and you can be certain it is made with the best ingredients.</p>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p>&copy; 2023 Grace McHugh</p>
+        </footer>
+
+</body>
+</html>
